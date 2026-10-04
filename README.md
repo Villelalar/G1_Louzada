@@ -1,10 +1,10 @@
-# 🛡️ Cibersegurança no Brasil (2015–2024)
+﻿# 🛡️ Cibersegurança no Brasil (2015–2024)
 
 Projeto G1 — Linguagem de Programação: Análise e Visualização de Dados com Python.
 
 **Aluna:** Larissa Villela dos Santos  
 **Professor:** Alexandre Neves Louzada  
-**Dashboard:** SEU_LINK_STREAMLIT · **Página:** SEU_LINK_GITHUB_PAGES
+**Dashboard:** https://g1louzada-4jctawkdqhqnkfufwzq6ht.streamlit.app/ · **Página:** https://villelalar.github.io/G1_Louzada/
 
 ## Problema
 Onde, como e com que custo ocorrem incidentes cibernéticos no Brasil, e quais vulnerabilidades mais pesam?
