@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cibersegurança no Brasil (2015–2024) — Projeto G1</title>
+<style>
+  :root{--bg:#0f172a;--card:#1e293b;--tx:#e2e8f0;--mut:#94a3b8;--ac:#38bdf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+  header{padding:64px 20px;text-align:center;background:linear-gradient(135deg,#0c4a6e,#0f172a)}
+  header h1{margin:0 0 8px;font-size:2.2rem} header p{color:var(--mut);max-width:720px;margin:0 auto}
+  .btns{margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btns a{background:var(--ac);color:#0f172a;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600}
+  .btns a.sec{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+  main{max-width:1000px;margin:0 auto;padding:20px}
+  section{margin:40px 0} h2{color:var(--ac);border-bottom:1px solid #334155;padding-bottom:6px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--card);border-radius:12px;padding:18px}
+  .kpi b{display:block;font-size:1.7rem;color:var(--ac)} .kpi span{color:var(--mut);font-size:.9rem}
+  figure{margin:0;background:var(--card);border-radius:12px;padding:14px}
+  figure img{width:100%;height:auto;border-radius:8px;background:#fff} figcaption{color:var(--mut);font-size:.9rem;margin-top:8px}
+  .tags span{display:inline-block;background:#334155;padding:4px 12px;border-radius:99px;margin:4px 4px 0 0;font-size:.85rem}
+  footer{text-align:center;color:var(--mut);padding:30px;font-size:.9rem}
+  li{margin:6px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>Cibersegurança no Brasil (2015–2024)</h1>
+  <h2> Linguagens de Programação </h2>
+  <p> Aluna: Larissa Villela dos santos</p>
+  <p> Professor Alexandre Neves Louzada </p>
+  <br>
+  <p>Análise e visualização de incidentes cibernéticos por região, setor e tipo de ataque, com dashboard interativo em Streamlit.</p>
+  <div class="btns">
+    <a href="SEU_LINK_STREAMLIT">Abrir Dashboard</a>
+    <a class="sec" href="SEU_LINK_GITHUB">Repositório GitHub</a>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>O problema</h2>
+    <p>Ataques como ransomware, phishing e DDoS geram perdas financeiras e interrompem serviços essenciais. Este projeto investiga <b>onde, como e com que custo</b> os incidentes ocorrem e quais vulnerabilidades mais se repetem, para apoiar decisões de prevenção.</p>
+  </section>
+  <section>
+    <h2>Principais números</h2>
+    <div class="grid">
+      <div class="card kpi"><b>53.644</b><span>incidentes registrados</span></div>
+      <div class="card kpi"><b>R$ 4,44 bi</b><span>impacto financeiro total</span></div>
+      <div class="card kpi"><b>R$ 82,8 mil</b><span>custo médio por incidente</span></div>
+      <div class="card kpi"><b>60,9 h</b><span>recuperação média</span></div>
+      <div class="card kpi"><b>33,4%</b><span>casos resolvidos</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>Base de dados</h2>
+    <p>4.440 registros mensais (2015–2024), 20 UFs, 5 regiões, 5 setores, 5 tipos de ataque e 4 vulnerabilidades. Base simulada, sem valores nulos ou duplicados.</p>
+  </section>
+  <section>
+    <h2>Visualizações</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+      <figure><img src="imagens/serie_mensal.png" alt="Série mensal"><figcaption>Incidentes por mês e média móvel de 12 meses: volume estável ao longo da década.</figcaption></figure>
+      <figure><img src="imagens/impacto_anual.png" alt="Impacto anual"><figcaption>Impacto anual entre R$ 425 e 461 milhões; 2024 é o maior.</figcaption></figure>
+      <figure><img src="imagens/impacto_uf.png" alt="Impacto por UF"><figcaption>RJ lidera as perdas; Sudeste concentra mais registros.</figcaption></figure>
+      <figure><img src="imagens/heatmap_setor_regiao.png" alt="Setor x região"><figcaption>Incidentes por setor e região.</figcaption></figure>
+      <figure><img src="imagens/ataque_impacto_medio.png" alt="Impacto por ataque"><figcaption>Impacto médio é parecido entre tipos de ataque.</figcaption></figure>
+      <figure><img src="imagens/vulnerabilidades.png" alt="Vulnerabilidades"><figcaption>Senha fraca é a vulnerabilidade mais frequente.</figcaption></figure>
+      <figure><img src="imagens/tempo_criticidade.png" alt="Tempo por criticidade"><figcaption>Tempo de recuperação não varia com a criticidade.</figcaption></figure>
+      <figure><img src="imagens/correlacao.png" alt="Correlação"><figcaption>Correlações próximas de zero entre variáveis numéricas.</figcaption></figure>
+    </div>
+  </section>
+  <section>
+    <h2>Conclusão</h2>
+    <ul>
+      <li>Senhas fracas, sistemas desatualizados, falha humana e falta de MFA têm pesos semelhantes — todas merecem ação.</li>
+      <li>Apenas ~33% dos incidentes estão resolvidos; o tempo de resposta é um ponto crítico.</li>
+      <li>Sudeste/RJ e os setores Governo e Financeiro concentram maiores perdas.</li>
+      <li>Por ser base simulada, as diferenças são pequenas; o valor do projeto está na metodologia aplicada.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Tecnologias</h2>
+    <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Streamlit</span><span>SQLAlchemy + SQLite</span><span>GitHub Pages</span></div>
+    <p>Funcionalidades avançadas: persistência em banco (SQLAlchemy + SQLite), correlação estatística e séries temporais (média móvel e variação anual).</p>
+  </section>
+</main>
+<footer>Projeto G1 — Linguagem de Programação: Análise e Visualização de Dados com Python · <a style="color:var(--ac)" href="SEU_LINK_GITHUB">Código no GitHub</a></footer>
+</body>
+</html>
